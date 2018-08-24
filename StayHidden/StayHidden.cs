@@ -37,7 +37,6 @@ namespace StayHidden
 		{
 			this.AddEventHandlers(new EventHandler(this, this));
 			this.AddCommand("stayhidden", new ToggleCommand(this, this));
-			//this.AddConfig(new Smod2.Config.ConfigSetting("turfwar_enabled", false, Smod2.Config.SettingType.BOOL, true, "Enables the turf war gamemode."));
 		}
 	}
 }
