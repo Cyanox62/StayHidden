@@ -30,7 +30,6 @@ namespace StayHidden
 
 		public void OnPlayerJoin(PlayerJoinEvent ev)
 		{
-			if (sh.TargetList.Count > 0) plugin.Info(sh.TargetList[0]);
 			if (sh.TargetList.Contains(ev.Player.SteamId))
 			{
 				ev.Player.HideTag(true);
