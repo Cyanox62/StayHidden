@@ -36,7 +36,6 @@ namespace StayHidden
 			{
 				if (!sh.TargetList.Contains(player.SteamId))
 				{
-					plugin.Info(player.SteamId);
 					sh.TargetList.Add(player.SteamId);
 					sh.status = "StayHidden enabled for " + player.Name + ".";
 					plugin.Info("StayHidden enabled for " + player.Name + ".");
@@ -45,7 +44,6 @@ namespace StayHidden
 
 				else if (sh.TargetList.Contains(player.SteamId))
 				{
-					plugin.Info("Remove");
 					sh.TargetList.Remove(player.SteamId);
 					sh.status = "StayHidden disabled for " + player.Name + ".";
 					plugin.Info("StayHidden disabled for " + player.Name + ".");

@@ -36,7 +36,7 @@ namespace StayHidden
 		public override void Register()
 		{
 			this.AddEventHandlers(new EventHandler(this, this));
-			this.AddCommand("stayhidden", new ToggleCommand(this, this));
+			this.AddCommands(new string[] { "sh", "stayhidden" }, new ToggleCommand(this, this));
 		}
 	}
 }
